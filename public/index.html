@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="logo">NETFLIX</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">My List</a>
+      </nav>
+      <input id="searchInput" type="search" placeholder="Search titles..." aria-label="Search titles" />
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h2 id="heroTitle">Loading...</h2>
+          <p id="heroDescription"></p>
+          <div class="hero-buttons">
+            <button class="btn play">▶ Play</button>
+            <button class="btn more">ℹ More Info</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe-card">
+        <h3>Ready to watch? Choose a plan.</h3>
+        <form id="subscribeForm">
+          <input id="email" type="email" placeholder="Email address" required />
+          <select id="plan" required>
+            <option value="">Select plan</option>
+            <option value="mobile">Mobile</option>
+            <option value="basic">Basic</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+          </select>
+          <button type="submit" class="btn submit">Get Started</button>
+        </form>
+        <p id="subscriptionMessage" role="status" aria-live="polite"></p>
+      </section>
+
+      <section id="rowsContainer"></section>
+    </main>
+
+    <template id="rowTemplate">
+      <section class="content-row">
+        <h3 class="row-title"></h3>
+        <div class="cards"></div>
+      </section>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

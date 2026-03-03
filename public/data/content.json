@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Wednesday",
+    "description": "Smart, sarcastic and a little dead inside, Wednesday Addams investigates a murder spree while making new friends (and foes) at Nevermore Academy.",
+    "backgroundImage": "https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=1600&q=80"
+  },
+  "rows": [
+    {
+      "id": "trending",
+      "title": "Trending Now",
+      "items": [
+        { "id": "m1", "name": "Extraction 2", "year": 2023, "rating": "U/A 16+", "genre": "Action" },
+        { "id": "m2", "name": "Lupin", "year": 2024, "rating": "U/A 13+", "genre": "Thriller" },
+        { "id": "m3", "name": "The Witcher", "year": 2023, "rating": "U/A 16+", "genre": "Fantasy" },
+        { "id": "m4", "name": "Top Boy", "year": 2023, "rating": "A", "genre": "Crime" },
+        { "id": "m5", "name": "Berlin", "year": 2024, "rating": "U/A 16+", "genre": "Drama" }
+      ]
+    },
+    {
+      "id": "watch-again",
+      "title": "Watch It Again",
+      "items": [
+        { "id": "m6", "name": "Stranger Things", "year": 2022, "rating": "U/A 16+", "genre": "Sci-Fi" },
+        { "id": "m7", "name": "The Crown", "year": 2023, "rating": "U/A 13+", "genre": "Historical" },
+        { "id": "m8", "name": "Money Heist", "year": 2021, "rating": "U/A 16+", "genre": "Heist" },
+        { "id": "m9", "name": "Dark", "year": 2020, "rating": "U/A 16+", "genre": "Mystery" },
+        { "id": "m10", "name": "Bridgerton", "year": 2024, "rating": "U/A 16+", "genre": "Romance" }
+      ]
+    }
+  ]
+}

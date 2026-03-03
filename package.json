@@ -1,0 +1,12 @@
+{
+  "name": "netflix-homepage",
+  "version": "1.0.0",
+  "description": "Netflix-style homepage with API and Cypress tests",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test:api": "node tests/api-smoke.js",
+    "test:cypress": "npx cypress run"
+  }
+}
