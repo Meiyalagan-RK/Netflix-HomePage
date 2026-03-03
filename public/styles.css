@@ -1,0 +1,161 @@
+:root {
+  --bg: #141414;
+  --card: #1f1f1f;
+  --text: #f5f5f1;
+  --muted: #b3b3b3;
+  --primary: #e50914;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  color: var(--primary);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 0.8rem;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+input,
+select,
+button {
+  border-radius: 4px;
+  border: none;
+  padding: 0.6rem;
+}
+
+#searchInput {
+  min-width: 220px;
+}
+
+.hero {
+  min-height: 55vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 20, 20, 0.95), rgba(20, 20, 20, 0.2));
+}
+
+.hero-content {
+  position: relative;
+  max-width: 640px;
+  padding: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.play {
+  background: white;
+}
+
+.more,
+.submit {
+  background: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+.subscribe-card {
+  background: #000;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  border: 1px solid #2f2f2f;
+}
+
+#subscribeForm {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  gap: 0.6rem;
+}
+
+#subscriptionMessage {
+  min-height: 1.2rem;
+  color: var(--muted);
+}
+
+.content-row {
+  padding: 0 2rem 1.5rem;
+}
+
+.row-title {
+  margin-bottom: 0.8rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 0.9rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 0.9rem;
+  border-radius: 6px;
+}
+
+.card p {
+  color: var(--muted);
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  #subscribeForm {
+    grid-template-columns: 1fr;
+  }
+
+  .content-row,
+  .subscribe-card {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
